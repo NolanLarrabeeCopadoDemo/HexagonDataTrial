@@ -239,7 +239,7 @@
     </fields>
     <fields>
         <fullName>Account_Ext_Id__c</fullName>
-        <caseSensitive>false</caseSensitive>
+        <caseSensitive>true</caseSensitive>
         <description>External Id for Copado ADD</description>
         <externalId>true</externalId>
         <label>Account Ext Id</label>
