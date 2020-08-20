@@ -319,6 +319,62 @@
     </fields>
     <label>Data Template</label>
     <listViews>
+        <fullName>Account_Exercise</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Active__c</columns>
+        <columns>copado__Main_Object__c</columns>
+        <columns>copado__Template_Source_Org__c</columns>
+        <columns>copado__Max_Record_Limit__c</columns>
+        <columns>copado__Batch_Size__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>copado__Template_Source_Org__c</field>
+            <operation>equals</operation>
+            <value>Production</value>
+        </filters>
+        <filters>
+            <field>copado__Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>notContain</operation>
+            <value>Opportunity</value>
+        </filters>
+        <label>Account Exercise</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunity_Exercise</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Active__c</columns>
+        <columns>copado__Main_Object__c</columns>
+        <columns>copado__Template_Source_Org__c</columns>
+        <columns>copado__Max_Record_Limit__c</columns>
+        <columns>copado__Batch_Size__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>copado__Template_Source_Org__c</field>
+            <operation>equals</operation>
+            <value>Production</value>
+        </filters>
+        <filters>
+            <field>copado__Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Opportunity</value>
+        </filters>
+        <label>Opportunity Exercise</label>
+    </listViews>
+    <listViews>
         <fullName>copado__All</fullName>
         <columns>NAME</columns>
         <columns>copado__Active__c</columns>
